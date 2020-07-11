@@ -1,4 +1,4 @@
-# OXID ide module helper
+# OXID 6 ide module helper
 
 Script to generate a .module-helper.php file in the OXID root dir.
 The generated file contains all module namespaces and extensions for your IDE to use for reference.
@@ -11,6 +11,11 @@ copy file to `YOURSHOPROOT/source/bin/`
 ## Usage
 
 `php source/bin/pc-ide-helper.php`
+
+## Changelog
+
+    2020-07-09  1.0.0   release
+    2020-07-11  1.1.0   fix getting metadatas, some other stuff
 
 ## License
 
