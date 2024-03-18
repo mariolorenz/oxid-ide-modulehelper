@@ -61,7 +61,7 @@ function _processMetadata($sPath)
 $modulePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'modules';
 $dir = new RecursiveDirectoryIterator($modulePath);
 $iter = new RecursiveIteratorIterator($dir);
-$files = new RegexIterator($iter, '/\/metadata\.php$/i', RecursiveRegexIterator::GET_MATCH);
+$files = new RegexIterator($iter, '/metadata\.php$/i', RecursiveRegexIterator::GET_MATCH);
 
 $str = "<?php\n/*\n" . date('Y-m-d H:i:s') . " - auto-generated file, do not edit! \nhttps://github.com/proudcommerce/oxid-ide-modulehelper\n*/\n";
 foreach ($files as $name => $file) {
